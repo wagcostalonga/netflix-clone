@@ -1,0 +1,102 @@
+#header {
+  height: 100vh;
+}
+
+#header .vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+#header .horizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 30%, transparent 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-bottom: 150px;
+  padding-top: 70px;
+}
+
+#header .title {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#header .info {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+#header .info-points,
+#header .info-year,
+#header .info-seasons {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#header .info-points {
+  color: #46d369;
+}
+
+#header .info-description {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #999;
+  max-width: 40%;
+}
+
+#header .info-buttons {
+  margin-top: 15px;
+}
+
+#header .info-buttons .btn-watch,
+#header .info-buttons .btn-add-list {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: all ease 0.2s;
+}
+
+#header .info-buttons .btn-watch:hover,
+#header .info-buttons .btn-add-list:hover {
+  filter: opacity(70%);
+}
+
+#header .info-buttons .btn-watch {
+  background-color: #fff;
+  color: #111;
+}
+
+#header .info-buttons .btn-add-list {
+  background-color: #333;
+  color: #fff;
+}
+
+#header .info-genres {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #999;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  #header .info-description {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  #header .info-description {
+    font-size: 16px;
+    max-width: 80%;
+  }
+}

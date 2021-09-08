@@ -1,0 +1,32 @@
+#lists {
+  margin-bottom: 30px;
+}
+
+#lists h2 {
+  margin: 0 0 0 30px;
+}
+
+#lists .listarea {
+  overflow-x: hidden;
+  padding-left: 30px;
+}
+
+#lists .list {
+  width: 9999px;
+}
+
+#lists .list-item {
+  display: inline-block;
+  width: 150px;
+  cursor: pointer;
+}
+
+#lists img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease 0.2s;
+}
+
+#lists img:hover {
+  transform: scale(1);
+}
